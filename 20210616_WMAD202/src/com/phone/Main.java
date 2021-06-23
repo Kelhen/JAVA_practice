@@ -1,7 +1,8 @@
-package com;
+package com.phone;
 
 import com.phone.GooglePixel;
 import com.phone.Iphone12;
+import com.phone.Phone;
 
 public class Main {
     public static void main(String[] args) {
