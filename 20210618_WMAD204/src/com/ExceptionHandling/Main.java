@@ -20,7 +20,7 @@ public class Main {
 
     public static void case2 (int x, int y){
         try{
-            System.out.println(x/y);
+            System.out.println(x/y); //Without TryCatch: this has "ArithmeticException Error"
         }catch(ArithmeticException e){
             System.out.println("The value of y is 0");
         }catch(Exception e){  //exception: super class

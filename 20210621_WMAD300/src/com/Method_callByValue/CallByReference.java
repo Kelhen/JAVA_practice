@@ -4,10 +4,12 @@ public class CallByReference {
     public static void main(String[] args) {
         String[] namesArray = {"Charlie", "John", "Patrick", "Mike"};
         CallByReference cbr = new CallByReference();
-        cbr.displayName(namesArray[0]);
+        cbr.displayName(namesArray);
+        System.out.println("****************");
+        System.out.println(namesArray[0]);
     }
     void displayName(String[] names){
-        for (String[] name: names
+        for (String name: names
              ) {
             System.out.println(name);
         }

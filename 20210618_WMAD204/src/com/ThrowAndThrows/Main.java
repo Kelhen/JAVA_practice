@@ -11,6 +11,7 @@ public class Main {
     }
 
     void myMethod() throws ArithmeticException,NullPointerException{ //Multiple exception
+//        throw new ArithmeticException("Some Arithmetic Error");
         try{
             throw new ArithmeticException("Some Arithmetic Error"); //only one exception
             //Throw: it has to go somewhere

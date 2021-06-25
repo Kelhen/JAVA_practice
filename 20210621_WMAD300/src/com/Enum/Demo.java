@@ -1,4 +1,9 @@
 package com.Enum;
 
-public class Demo {
+public enum Demo {
+    COLLECTIONS,
+    COREJAVA,
+    GENERICS,
+    JSPANDSERLETS,
+    MULTITHREADING,
 }
