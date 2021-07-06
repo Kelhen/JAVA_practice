@@ -11,20 +11,33 @@ public class Main {
         demo.push(3);
         demo.push(4);
 
-        for (int temp:demo
-             ) {
-            System.out.println(temp);
+        if(demo.isEmpty()){
+            System.out.println("Stack is empty");
+        } else{
+            System.out.println("Stack is not empty");
+            System.out.println("****************");
+
+
+            for (int temp:demo
+            ) {
+                System.out.println(temp);
+            }
+            System.out.println("Peek: "+ demo.peek());//checks the last element in thee stack
+
+            demo.pop(); //remove last entry
+            System.out.println("****************");
+
+            for (int temp:demo
+            ) {
+                System.out.println(temp);
+            }
+
+            System.out.println("****************");
+            System.out.println("Peek: "+ demo.peek());
         }
 
-        demo.pop();
-        System.out.println("****************");
+        System.out.println(demo.search(0));
 
-        for (int temp:demo
-             ) {
-            System.out.println(temp);
-        }
-        System.out.println(demo.peek()); //checks the last element in thee stack
+
     }
-
-
 }
