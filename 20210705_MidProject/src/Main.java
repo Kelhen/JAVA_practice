@@ -49,10 +49,16 @@ public class Main {
                     break;
                 case 'c':
                     System.out.println("-------------------------------------------------------");
-                    // System.out.println("Type the code for: " + list.get());
-
-                    // option1 = scanner.next().charAt(0);
-
+                    Item randItem = list.getRadomItem();
+                    System.out.println("What is the code for " + randItem.getName() + " ?");
+                    Integer answer = scanner.nextInt();
+                    System.out.println(answer.toString() + " ? " + randItem.getCode().toString());
+                    System.out.println(randItem.getCode().equals(answer));
+                    if (randItem.getCode().equals(answer)) {
+                        System.out.println("Pipon!!!");
+                    } else {
+                        System.out.println("BUBU");
+                    }
                     System.out.println("-------------------------------------------------------");
                     break;
                 case 'd':
