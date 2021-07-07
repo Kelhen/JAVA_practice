@@ -81,11 +81,9 @@ class CodeList {
         list.add(input);
     }
 
-    void practiceMode(){
+    void numberOfPracticeMode(){
         CodeList obj = new CodeList();
         var index = obj.getRandamElement(list);
-
-
     }
 
     private ListOfCode getRandamElement(ArrayList<ListOfCode> list) {
@@ -94,7 +92,7 @@ class CodeList {
     }
 
 
-    //--------------------------------------------------------
+//--------------------------------------------------------
 //------------------- SHOW MENU --------------------------
 //--------------------------------------------------------
     Scanner scanner = new Scanner(System.in);
@@ -120,24 +118,24 @@ class CodeList {
                     System.out.println("-------------------------------------------------------");
                     System.out.println("Remember the code below");
                     System.out.println("-------------------------------------------------------");
-                    displayProduct(list);
+                    displayProduct(this.list);
                     System.out.println("\n");
                     break;
                 case 'b':
                     System.out.println("-------------------------------------------------------");
-                    System.out.println("Type the name of the vegitable you would like to add: ");
-                    System.out.println("First: the NAME of the vegitable/fruit");
-                    System.out.println("Second: the CODE of the vegitable/fruit");
+                    System.out.println("Type the name of the vegetable you would like to add: ");
+                    System.out.println("First: the NAME of the vegetable/fruit");
+                    System.out.println("Second: the CODE of the vegetable/fruit");
                     System.out.println("-------------------------------------------------------");
                     addProduct();
                     System.out.println("\n");
                     break;
                 case 'c':
                     System.out.println("-------------------------------------------------------");
-                    System.out.println("Type the code for: " + list.get());
+//                    System.out.println("Type the code for: " + list.get());
 
 
-                    option1 = scanner.next().charAt(0);
+//                    option1 = scanner.next().charAt(0);
 
                     System.out.println("-------------------------------------------------------");
                     break;
