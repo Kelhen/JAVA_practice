@@ -65,9 +65,8 @@ public class Main {
             }
 
         } while (option != 'D');
-        System.out.println("Good job!! See you tomorrow!");
-        scanner.close();
-
+            System.out.println("Good job!! See you tomorrow!");
+            scanner.close();
     }
 
 }

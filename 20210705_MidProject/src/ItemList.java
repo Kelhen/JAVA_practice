@@ -2,19 +2,18 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class ItemList {
-    private ArrayList<Item> list;
+    private ArrayList<Item> list = new ArrayList<Item>();
 
     public ItemList(){
-        list = new ArrayList<Item>();
         // init list with items
-        list.add(new Item("Banana",4011));
-        list.add(new Item("Gala Apple",4171));
-        list.add(new Item("Lemon",4053));
-        list.add(new Item("Rime",4048));
-        list.add(new Item("Cherry",4259));
+        addItem("Banana",4011);
+        addItem("Gala Apple",4171);
+        addItem("Lemon",4053);
+        addItem("Rime",4048);
+        addItem("Cherry",4259);
     }
 
-    void displayList() {
+    public void displayList() {
         for (int counter = 0; counter < list.size(); counter++) {
             System.out.println(list.get(counter).toString());
         }
@@ -29,5 +28,4 @@ public class ItemList {
         Item randomItem = list.get(rand.nextInt(list.size()));
         return randomItem;
     }
-
 }
